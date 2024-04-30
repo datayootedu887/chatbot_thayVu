@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: black;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://www.metaedu.org.tw/wp-content/uploads/2021/05/InnEdu-Picture2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 85vh;
+}
+
+input[type="text"] {
+    width: 96%;
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 1200px) {
+    #chat-container {
+        width: 70%;
+    }
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    font-weight: bold;
+    color: black;
+}
+
+.bot-message {
+    color: black;
+}
+
+input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.greeting-message {
+    background-color: #ee6823;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Media Query for Tablets and Mobiles */
+@media screen and (max-width: 768px) {
+    #chat-container {
+        width: 98%;
+    }
+}
+
+#chat-container {
+    max-width: 90%;
+    width: 900px;
+    max-height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+#messages {
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 20px;
+    max-height: 70vh;
+}
+
+#messages hr {
+    border: 0;
+    height: 3px;
+    background-color: #ee6823;
+    margin: 10px 0;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#sendButton,
+#saveChat {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+}
+
+#sendButton {
+    background-color: #17479d;
+    color: white;
+}
+
+#sendButton:hover {
+    background-color: #588eee;
+}
+
+#saveChat {
+    background-color: #17479d;
+    color: white;
+}
+
+#saveChat:hover {
+    background-color: #588eee;
+}
